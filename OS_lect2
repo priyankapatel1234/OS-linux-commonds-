@@ -1,0 +1,292 @@
+/home/priyanka
+priyanka@priyanka-Lenovo-G50-80:~$ ls -l
+total 61560
+-----wxr-- 1 priyanka priyanka       14 Aug  5 14:44 demo
+-rw-r--r-- 1 priyanka priyanka       15 Aug 10 14:15 demo1
+-rw-r--r-- 1 priyanka priyanka       15 Aug 10 14:17 demo2
+drwxr-xr-x 7 priyanka priyanka     4096 Aug  5 21:08 Desktop
+drwxr-xr-x 3 priyanka priyanka     4096 Aug  5 21:08 Documents
+drwxr-xr-x 5 priyanka priyanka     4096 Aug  5 21:38 Downloads
+-rw-r--r-- 1 priyanka priyanka     8980 Nov 28  2019 examples.desktop
+-rw-r--r-- 1 priyanka priyanka 62950548 Nov 16  2019 google-chrome-stable_current_amd64.deb
+-rw-rw-r-- 1 priyanka priyanka     1381 May 26 14:54 htmlproject.html
+drwxr-xr-x 2 priyanka priyanka     4096 Aug  5 14:49 mando
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Music
+-rw-r--r-- 1 priyanka priyanka    11646 Nov 30  2019 nodesource_setup.sh
+drwxr-xr-x 2 priyanka priyanka     4096 Jun 21 10:48 Pictures
+drwxr-xr-x 3 priyanka priyanka     4096 Nov 30  2019 Project
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Public
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Templates
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Videos
+priyanka@priyanka-Lenovo-G50-80:~$ cat demo1
+hello priyanka
+priyanka@priyanka-Lenovo-G50-80:~$ cat demo2
+hello priyanka
+priyanka@priyanka-Lenovo-G50-80:~$ ps
+  PID TTY          TIME CMD
+24303 pts/0    00:00:00 bash
+24316 pts/0    00:00:00 ps
+priyanka@priyanka-Lenovo-G50-80:~$ ls -l
+total 61560
+-----wxr-- 1 priyanka priyanka       14 Aug  5 14:44 demo
+-rw-r--r-- 1 priyanka priyanka       15 Aug 10 14:15 demo1
+-rw-r--r-- 1 priyanka priyanka       15 Aug 10 14:17 demo2
+drwxr-xr-x 7 priyanka priyanka     4096 Aug  5 21:08 Desktop
+drwxr-xr-x 3 priyanka priyanka     4096 Aug  5 21:08 Documents
+drwxr-xr-x 5 priyanka priyanka     4096 Aug  5 21:38 Downloads
+-rw-r--r-- 1 priyanka priyanka     8980 Nov 28  2019 examples.desktop
+-rw-r--r-- 1 priyanka priyanka 62950548 Nov 16  2019 google-chrome-stable_current_amd64.deb
+-rw-rw-r-- 1 priyanka priyanka     1381 May 26 14:54 htmlproject.html
+drwxr-xr-x 2 priyanka priyanka     4096 Aug  5 14:49 mando
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Music
+-rw-r--r-- 1 priyanka priyanka    11646 Nov 30  2019 nodesource_setup.sh
+drwxr-xr-x 2 priyanka priyanka     4096 Jun 21 10:48 Pictures
+drwxr-xr-x 3 priyanka priyanka     4096 Nov 30  2019 Project
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Public
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Templates
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Videos
+priyanka@priyanka-Lenovo-G50-80:~$ ls -a
+.                                       .ICEauthority
+..                                      .local
+.bash_history                           mando
+.bash_logout                            .mozilla
+.bashrc                                 Music
+.cache                                  nodesource_setup.sh
+.config                                 .npm
+demo                                    Pictures
+demo1                                   .pki
+demo2                                   .profile
+Desktop                                 Project
+Documents                               Public
+Downloads                               .ssh
+examples.desktop                        .sudo_as_admin_successful
+.gnome                                  Templates
+.gnupg                                  .thunderbird
+google-chrome-stable_current_amd64.deb  Videos
+htmlproject.html
+priyanka@priyanka-Lenovo-G50-80:~$ pwd
+/home/priyanka
+priyanka@priyanka-Lenovo-G50-80:~$ ps -f
+UID        PID  PPID  C STIME TTY          TIME CMD
+priyanka 24303 24293  0 14:31 pts/0    00:00:00 bash
+priyanka 24324 24303  0 14:35 pts/0    00:00:00 ps -f
+priyanka@priyanka-Lenovo-G50-80:~$ kill  -9 182
+bash: kill: (182) - No such process
+priyanka@priyanka-Lenovo-G50-80:~$ 
+priyanka@priyanka-Lenovo-G50-80:~$ cat >demo3 &
+[1] 24337
+priyanka@priyanka-Lenovo-G50-80:~$ ps -f
+UID        PID  PPID  C STIME TTY          TIME CMD
+priyanka 24303 24293  0 14:31 pts/0    00:00:00 bash
+priyanka 24337 24303  0 14:47 pts/0    00:00:00 cat
+priyanka 24338 24303  0 14:47 pts/0    00:00:00 ps -f
+
+[1]+  Stopped                 cat > demo3
+priyanka@priyanka-Lenovo-G50-80:~$ mkdir mando
+mkdir: cannot create directory ‘mando’: File exists
+priyanka@priyanka-Lenovo-G50-80:~$ mkdir priya
+priyanka@priyanka-Lenovo-G50-80:~$ ls -l
+total 61564
+-----wxr-- 1 priyanka priyanka       14 Aug  5 14:44 demo
+-rw-r--r-- 1 priyanka priyanka       15 Aug 10 14:15 demo1
+-rw-r--r-- 1 priyanka priyanka       15 Aug 10 14:17 demo2
+-rw-r--r-- 1 priyanka priyanka        0 Aug 10 14:47 demo3
+drwxr-xr-x 7 priyanka priyanka     4096 Aug  5 21:08 Desktop
+drwxr-xr-x 3 priyanka priyanka     4096 Aug  5 21:08 Documents
+drwxr-xr-x 5 priyanka priyanka     4096 Aug  5 21:38 Downloads
+-rw-r--r-- 1 priyanka priyanka     8980 Nov 28  2019 examples.desktop
+-rw-r--r-- 1 priyanka priyanka 62950548 Nov 16  2019 google-chrome-stable_current_amd64.deb
+-rw-rw-r-- 1 priyanka priyanka     1381 May 26 14:54 htmlproject.html
+drwxr-xr-x 2 priyanka priyanka     4096 Aug  5 14:49 mando
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Music
+-rw-r--r-- 1 priyanka priyanka    11646 Nov 30  2019 nodesource_setup.sh
+drwxr-xr-x 2 priyanka priyanka     4096 Jun 21 10:48 Pictures
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 14:50 priya
+drwxr-xr-x 3 priyanka priyanka     4096 Nov 30  2019 Project
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Public
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Templates
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Videos
+priyanka@priyanka-Lenovo-G50-80:~$ mv demo1 /priyanka/priya/priya
+mv: cannot move 'demo1' to '/priyanka/priya/priya': No such file or directory
+priyanka@priyanka-Lenovo-G50-80:~$ mv demo1 /priyanka/priya/demo2
+mv: cannot move 'demo1' to '/priyanka/priya/demo2': No such file or directory
+priyanka@priyanka-Lenovo-G50-80:~$ mv demo1 /priyanka@priyanka/abc
+mv: cannot move 'demo1' to '/priyanka@priyanka/abc': No such file or directory
+priyanka@priyanka-Lenovo-G50-80:~$ mv demo1 /priyanka@priyanka/bc/app
+mv: cannot move 'demo1' to '/priyanka@priyanka/bc/app': No such file or directory
+priyanka@priyanka-Lenovo-G50-80:~$ mkdir bca
+priyanka@priyanka-Lenovo-G50-80:~$ mv demo1 /priyanka@priyanka/bca/app
+mv: cannot move 'demo1' to '/priyanka@priyanka/bca/app': No such file or directory
+priyanka@priyanka-Lenovo-G50-80:~$ mkdir bca1
+priyanka@priyanka-Lenovo-G50-80:~$ mv bca1 /priyanka@priyanka/bca/app
+mv: cannot move 'bca1' to '/priyanka@priyanka/bca/app': No such file or directory
+priyanka@priyanka-Lenovo-G50-80:~$ mv demo2/priyanka@priyanka/bca/app
+mv: missing destination file operand after 'demo2/priyanka@priyanka/bca/app'
+Try 'mv --help' for more information.
+priyanka@priyanka-Lenovo-G50-80:~$ mkdir amit
+priyanka@priyanka-Lenovo-G50-80:~$ ls -l
+total 61576
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 15:06 amit
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 14:57 bca
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 14:58 bca1
+-----wxr-- 1 priyanka priyanka       14 Aug  5 14:44 demo
+-rw-r--r-- 1 priyanka priyanka       15 Aug 10 14:15 demo1
+-rw-r--r-- 1 priyanka priyanka       15 Aug 10 14:17 demo2
+-rw-r--r-- 1 priyanka priyanka        0 Aug 10 14:47 demo3
+drwxr-xr-x 7 priyanka priyanka     4096 Aug  5 21:08 Desktop
+drwxr-xr-x 3 priyanka priyanka     4096 Aug  5 21:08 Documents
+drwxr-xr-x 5 priyanka priyanka     4096 Aug  5 21:38 Downloads
+-rw-r--r-- 1 priyanka priyanka     8980 Nov 28  2019 examples.desktop
+-rw-r--r-- 1 priyanka priyanka 62950548 Nov 16  2019 google-chrome-stable_current_amd64.deb
+-rw-rw-r-- 1 priyanka priyanka     1381 May 26 14:54 htmlproject.html
+drwxr-xr-x 2 priyanka priyanka     4096 Aug  5 14:49 mando
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Music
+-rw-r--r-- 1 priyanka priyanka    11646 Nov 30  2019 nodesource_setup.sh
+drwxr-xr-x 2 priyanka priyanka     4096 Jun 21 10:48 Pictures
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 14:50 priya
+drwxr-xr-x 3 priyanka priyanka     4096 Nov 30  2019 Project
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Public
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Templates
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Videos
+priyanka@priyanka-Lenovo-G50-80:~$ pwd
+/home/priyanka
+priyanka@priyanka-Lenovo-G50-80:~$ cat >demo1
+hello
+^Z
+[2]+  Stopped                 cat > demo1
+priyanka@priyanka-Lenovo-G50-80:~$ cat demo2
+hello priyanka
+priyanka@priyanka-Lenovo-G50-80:~$ mv demo2/home/priyanka/amit/pri
+mv: missing destination file operand after 'demo2/home/priyanka/amit/pri'
+Try 'mv --help' for more information.
+priyanka@priyanka-Lenovo-G50-80:~$ ln amit ad
+ln: amit: hard link not allowed for directory
+priyanka@priyanka-Lenovo-G50-80:~$ mkdir amit
+mkdir: cannot create directory ‘amit’: File exists
+priyanka@priyanka-Lenovo-G50-80:~$ ln demo2 ad
+priyanka@priyanka-Lenovo-G50-80:~$ ls -l
+total 61580
+-rw-r--r-- 2 priyanka priyanka       15 Aug 10 14:17 ad
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 15:06 amit
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 14:57 bca
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 14:58 bca1
+-----wxr-- 1 priyanka priyanka       14 Aug  5 14:44 demo
+-rw-r--r-- 1 priyanka priyanka        6 Aug 10 15:07 demo1
+-rw-r--r-- 2 priyanka priyanka       15 Aug 10 14:17 demo2
+-rw-r--r-- 1 priyanka priyanka        0 Aug 10 14:47 demo3
+drwxr-xr-x 7 priyanka priyanka     4096 Aug  5 21:08 Desktop
+drwxr-xr-x 3 priyanka priyanka     4096 Aug  5 21:08 Documents
+drwxr-xr-x 5 priyanka priyanka     4096 Aug  5 21:38 Downloads
+-rw-r--r-- 1 priyanka priyanka     8980 Nov 28  2019 examples.desktop
+-rw-r--r-- 1 priyanka priyanka 62950548 Nov 16  2019 google-chrome-stable_current_amd64.deb
+-rw-rw-r-- 1 priyanka priyanka     1381 May 26 14:54 htmlproject.html
+drwxr-xr-x 2 priyanka priyanka     4096 Aug  5 14:49 mando
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Music
+-rw-r--r-- 1 priyanka priyanka    11646 Nov 30  2019 nodesource_setup.sh
+drwxr-xr-x 2 priyanka priyanka     4096 Jun 21 10:48 Pictures
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 14:50 priya
+drwxr-xr-x 3 priyanka priyanka     4096 Nov 30  2019 Project
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Public
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Templates
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Videos
+priyanka@priyanka-Lenovo-G50-80:~$ ln demo2 af
+priyanka@priyanka-Lenovo-G50-80:~$  ls -l
+total 61584
+-rw-r--r-- 3 priyanka priyanka       15 Aug 10 14:17 ad
+-rw-r--r-- 3 priyanka priyanka       15 Aug 10 14:17 af
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 15:06 amit
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 14:57 bca
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 14:58 bca1
+-----wxr-- 1 priyanka priyanka       14 Aug  5 14:44 demo
+-rw-r--r-- 1 priyanka priyanka        6 Aug 10 15:07 demo1
+-rw-r--r-- 3 priyanka priyanka       15 Aug 10 14:17 demo2
+-rw-r--r-- 1 priyanka priyanka        0 Aug 10 14:47 demo3
+drwxr-xr-x 7 priyanka priyanka     4096 Aug  5 21:08 Desktop
+drwxr-xr-x 3 priyanka priyanka     4096 Aug  5 21:08 Documents
+drwxr-xr-x 5 priyanka priyanka     4096 Aug  5 21:38 Downloads
+-rw-r--r-- 1 priyanka priyanka     8980 Nov 28  2019 examples.desktop
+-rw-r--r-- 1 priyanka priyanka 62950548 Nov 16  2019 google-chrome-stable_current_amd64.deb
+-rw-rw-r-- 1 priyanka priyanka     1381 May 26 14:54 htmlproject.html
+drwxr-xr-x 2 priyanka priyanka     4096 Aug  5 14:49 mando
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Music
+-rw-r--r-- 1 priyanka priyanka    11646 Nov 30  2019 nodesource_setup.sh
+drwxr-xr-x 2 priyanka priyanka     4096 Jun 21 10:48 Pictures
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 14:50 priya
+drwxr-xr-x 3 priyanka priyanka     4096 Nov 30  2019 Project
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Public
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Templates
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Videos
+priyanka@priyanka-Lenovo-G50-80:~$ cat demo2
+hello priyanka
+priyanka@priyanka-Lenovo-G50-80:~$ cat ad
+hello priyanka
+priyanka@priyanka-Lenovo-G50-80:~$ cat af
+hello priyanka
+priyanka@priyanka-Lenovo-G50-80:~$ rm af
+priyanka@priyanka-Lenovo-G50-80:~$ cat ad
+hello priyanka
+priyanka@priyanka-Lenovo-G50-80:~$ ls -l
+total 61580
+-rw-r--r-- 2 priyanka priyanka       15 Aug 10 14:17 ad
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 15:06 amit
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 14:57 bca
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 14:58 bca1
+-----wxr-- 1 priyanka priyanka       14 Aug  5 14:44 demo
+-rw-r--r-- 1 priyanka priyanka        6 Aug 10 15:07 demo1
+-rw-r--r-- 2 priyanka priyanka       15 Aug 10 14:17 demo2
+-rw-r--r-- 1 priyanka priyanka        0 Aug 10 14:47 demo3
+drwxr-xr-x 7 priyanka priyanka     4096 Aug  5 21:08 Desktop
+drwxr-xr-x 3 priyanka priyanka     4096 Aug  5 21:08 Documents
+drwxr-xr-x 5 priyanka priyanka     4096 Aug  5 21:38 Downloads
+-rw-r--r-- 1 priyanka priyanka     8980 Nov 28  2019 examples.desktop
+-rw-r--r-- 1 priyanka priyanka 62950548 Nov 16  2019 google-chrome-stable_current_amd64.deb
+-rw-rw-r-- 1 priyanka priyanka     1381 May 26 14:54 htmlproject.html
+drwxr-xr-x 2 priyanka priyanka     4096 Aug  5 14:49 mando
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Music
+-rw-r--r-- 1 priyanka priyanka    11646 Nov 30  2019 nodesource_setup.sh
+drwxr-xr-x 2 priyanka priyanka     4096 Jun 21 10:48 Pictures
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 14:50 priya
+drwxr-xr-x 3 priyanka priyanka     4096 Nov 30  2019 Project
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Public
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Templates
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Videos
+priyanka@priyanka-Lenovo-G50-80:~$ rm ad 
+priyanka@priyanka-Lenovo-G50-80:~$ ls -l
+total 61576
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 15:06 amit
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 14:57 bca
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 14:58 bca1
+-----wxr-- 1 priyanka priyanka       14 Aug  5 14:44 demo
+-rw-r--r-- 1 priyanka priyanka        6 Aug 10 15:07 demo1
+-rw-r--r-- 1 priyanka priyanka       15 Aug 10 14:17 demo2
+-rw-r--r-- 1 priyanka priyanka        0 Aug 10 14:47 demo3
+drwxr-xr-x 7 priyanka priyanka     4096 Aug  5 21:08 Desktop
+drwxr-xr-x 3 priyanka priyanka     4096 Aug  5 21:08 Documents
+drwxr-xr-x 5 priyanka priyanka     4096 Aug  5 21:38 Downloads
+-rw-r--r-- 1 priyanka priyanka     8980 Nov 28  2019 examples.desktop
+-rw-r--r-- 1 priyanka priyanka 62950548 Nov 16  2019 google-chrome-stable_current_amd64.deb
+-rw-rw-r-- 1 priyanka priyanka     1381 May 26 14:54 htmlproject.html
+drwxr-xr-x 2 priyanka priyanka     4096 Aug  5 14:49 mando
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Music
+-rw-r--r-- 1 priyanka priyanka    11646 Nov 30  2019 nodesource_setup.sh
+drwxr-xr-x 2 priyanka priyanka     4096 Jun 21 10:48 Pictures
+drwxr-xr-x 2 priyanka priyanka     4096 Aug 10 14:50 priya
+drwxr-xr-x 3 priyanka priyanka     4096 Nov 30  2019 Project
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Public
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Templates
+drwxr-xr-x 2 priyanka priyanka     4096 Nov 28  2019 Videos
+priyanka@priyanka-Lenovo-G50-80:~$ ls -l^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^[[2~^Z
+ls: invalid option -- ''
+Try 'ls --help' for more information.
+priyanka@priyanka-Lenovo-G50-80:~$ cat >.xyz
+^Z
+[3]+  Stopped                 cat > .xyz
+priyanka@priyanka-Lenovo-G50-80:~$ ls -a
+.              bca      demo2             .gnome                                  mando                .pki      .sudo_as_admin_successful
+..             bca1     demo3             .gnupg                                  .mozilla             priya     Templates
+amit           .cache   Desktop           google-chrome-stable_current_amd64.deb  Music                .profile  .thunderbird
+.bash_history  .config  Documents         htmlproject.html                        nodesource_setup.sh  Project   Videos
+.bash_logout   demo     Downloads         .ICEauthority                           .npm                 Public    .xyz
+.bashrc        demo1    examples.desktop  .local                                  Pictures             .ssh
+priyanka@priyanka-Lenovo-G50-80:~$ 
+
