@@ -1,0 +1,81 @@
+priyanka@priyanka-Lenovo-G50-80:~$ gedit
+priyanka@priyanka-Lenovo-G50-80:~$ cat prime.sh
+number=53
+i=2
+flag=0
+while
+ test $i -le `expr $number / 2`
+do
+if test `expr $number % $i` -eq 0
+then
+flag=1
+fi
+
+i=`expr $i + 1`
+done 
+if test $flag -eq 1
+then
+echo "The number is Not Prime"
+else
+echo "The number is Prime"
+fi
+
+priyanka@priyanka-Lenovo-G50-80:~$ sh prime.sh
+The number is Prime
+priyanka@priyanka-Lenovo-G50-80:~$ cat reverse.sh
+cat: reverse.sh: No such file or directory
+priyanka@priyanka-Lenovo-G50-80:~$ cat >reverse.sh
+hii
+^Z
+[1]+  Stopped                 cat > reverse.sh
+priyanka@priyanka-Lenovo-G50-80:~$ gedit reverse.sh
+priyanka@priyanka-Lenovo-G50-80:~$ sh reverse.sh
+Enter a number
+345
+Reverse number of entered digit is 543
+priyanka@priyanka-Lenovo-G50-80:~$ cat > digitsum.sh
+hii^Z
+[2]+  Stopped                 cat > digitsum.sh
+priyanka@priyanka-Lenovo-G50-80:~$ gedit digitsum.sh
+priyanka@priyanka-Lenovo-G50-80:~$ sh digitsum.sh
+hii
+digitsum.sh: 9: digitsum.sh: Syntax error: ")" unexpected (expecting "done")
+priyanka@priyanka-Lenovo-G50-80:~$ sh digitsum.sh
+345
+digitsum.sh: 9: digitsum.sh: Syntax error: ")" unexpected (expecting "done")
+priyanka@priyanka-Lenovo-G50-80:~$ cat digitsum.sh
+read n
+g=$n
+s=0
+k=
+if [ $n -gt 0 ] ; then echo "Not a positive number"
+else
+    while [ $n -gt 0 ]
+       do
+          k=$CC $n % 10 ))
+          n=$CC $n / 10 ))
+          s=$(C $s + $k ))
+       done
+echo "Sum of digit for given number is $s"
+fi
+priyanka@priyanka-Lenovo-G50-80:~$ gedit digitsum.sh
+priyanka@priyanka-Lenovo-G50-80:~$ sh digitsum.sh
+456
+digitsum.sh: 10: digitsum.sh: Syntax error: ")" unexpected (expecting "done")
+priyanka@priyanka-Lenovo-G50-80:~$ gedit digitsum.sh
+priyanka@priyanka-Lenovo-G50-80:~$ sh digitsum.sh
+345
+digitsum.sh: 10: digitsum.sh: Syntax error: ")" unexpected (expecting "done")
+priyanka@priyanka-Lenovo-G50-80:~$ gedit digitsum.sh
+priyanka@priyanka-Lenovo-G50-80:~$ sh digitsum.sh
+456
+digitsum.sh: 3: digitsum.sh: [[: not found
+digitsum.sh: 7: digitsum.sh: [[: not found
+Sum of digit for given number is 0
+priyanka@priyanka-Lenovo-G50-80:~$ gedit digitsum.sh
+priyanka@priyanka-Lenovo-G50-80:~$ sh digitsum.sh
+Enter a number
+345
+12
+priyanka@priyanka-Lenovo-G50-80:~$ 
+
