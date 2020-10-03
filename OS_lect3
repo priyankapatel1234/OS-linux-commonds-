@@ -1,0 +1,85 @@
+priyanka@priyanka-Lenovo-G50-80:~$ cat leap.sh
+cat: leap.sh: No such file or directory
+priyanka@priyanka-Lenovo-G50-80:~$ cat >leap.sh
+echo "enter  number"
+read year
+a=`expr $year % 4`
+b=`expr $year % 100`
+c=`expr $year % 400'
+if [$a -eq 0 -a $b -ne 0 -o $c -eq 0 ]
+then 
+echo $year is leap year        
+else
+echo $year is not leap year
+^Z
+[1]+  Stopped                 cat > leap.sh
+priyanka@priyanka-Lenovo-G50-80:~$ gedit leap.sh
+priyanka@priyanka-Lenovo-G50-80:~$ sh leap.sh
+enter  number
+100
+leap.sh: 11: leap.sh: Syntax error: EOF in backquote substitution
+priyanka@priyanka-Lenovo-G50-80:~$ gedit leap.sh
+priyanka@priyanka-Lenovo-G50-80:~$ sh leap.sh
+enter  number
+400
+leap.sh: 12: leap.sh: Syntax error: EOF in backquote substitution
+priyanka@priyanka-Lenovo-G50-80:~$ cat even.sh
+echo -n "enter number"
+read num
+rem=`expr $num % 2`
+if [$rem -eq 0 ]
+then echo "$num is even number"
+else
+echo "$num is odd number"
+fi
+priyanka@priyanka-Lenovo-G50-80:~$ sh even.sh
+enter number4
+even.sh: 4: even.sh: [0: not found
+4 is odd number
+priyanka@priyanka-Lenovo-G50-80:~$ sh even.sh
+enter number5
+even.sh: 4: even.sh: [1: not found
+5 is odd number
+priyanka@priyanka-Lenovo-G50-80:~$ sh even.sh
+enter number10
+even.sh: 4: even.sh: [0: not found
+10 is odd number
+priyanka@priyanka-Lenovo-G50-80:~$ gedit even.sh
+priyanka@priyanka-Lenovo-G50-80:~$ sh even.sh
+enter number4
+even.sh: 4: even.sh: [0: not found
+4 is odd number
+priyanka@priyanka-Lenovo-G50-80:~$ gedit even.sh
+priyanka@priyanka-Lenovo-G50-80:~$ sh even.sh
+enter number4
+4 is even number
+priyanka@priyanka-Lenovo-G50-80:~$ echo "what is your name"
+what is your name
+priyanka@priyanka-Lenovo-G50-80:~$ read PERSON
+echo "hello ,$PERSON"
+priyanka@priyanka-Lenovo-G50-80:~$ gedit leap.sh
+priyanka@priyanka-Lenovo-G50-80:~$ sh leap.sh
+enter  number
+2000
+leap.sh: 4: leap.sh: [0: not found
+2000 is not leap year
+priyanka@priyanka-Lenovo-G50-80:~$ sh leap.sh
+enter  number
+2017
+leap.sh: 4: leap.sh: [1: not found
+2017 is not leap year
+priyanka@priyanka-Lenovo-G50-80:~$ gedit leap.sh
+priyanka@priyanka-Lenovo-G50-80:~$ gedit leap.sh
+priyanka@priyanka-Lenovo-G50-80:~$ sh leap.sh
+enter  number
+2000
+leap.sh: 4: [: missing ]
+2000 is not leap year
+priyanka@priyanka-Lenovo-G50-80:~$ gedit leap.sh
+priyanka@priyanka-Lenovo-G50-80:~$ sh leap.sh
+enter  number
+2000
+leap.sh: 4: [: missing ]
+2000 is not leap year
+priyanka@priyanka-Lenovo-G50-80:~$ read PERSON
+
