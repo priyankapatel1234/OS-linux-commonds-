@@ -1,0 +1,109 @@
+priyanka@priyanka-Lenovo-G50-80:~$ cat sumofn.sh
+echo "Enter Size(N)"
+read N
+
+i=1
+sum=0
+
+echo "Enter Numbers"
+while [ $i -le $N ]
+do
+  read num           #get number
+  sum=$((sum + num)) #sum+=num
+  i=$((i + 1))
+done
+
+echo $sum
+priyanka@priyanka-Lenovo-G50-80:~$ sh  sumofn.sh
+Enter Size(N)
+5
+Enter Numbers
+1
+2
+3
+4
+5
+15
+priyanka@priyanka-Lenovo-G50-80:~$ cat table.sh
+  echo "which number to generate multiplication table"
+  read number
+  i=1
+  while [ $i -le 10 ]
+  do
+  echo " $number * $i =`expr $number \* $i ` "
+  i=`expr $i + 1`
+  done
+priyanka@priyanka-Lenovo-G50-80:~$ sh  table.sh
+which number to generate multiplication table
+5
+ 5 * 1 =5 
+ 5 * 2 =10 
+ 5 * 3 =15 
+ 5 * 4 =20 
+ 5 * 5 =25 
+ 5 * 6 =30 
+ 5 * 7 =35 
+ 5 * 8 =40 
+ 5 * 9 =45 
+ 5 * 10 =50 
+priyanka@priyanka-Lenovo-G50-80:~$ cat cube.sh
+echo "enter a number:"
+read a
+sq=` expr "$a" \* "$a" `
+cube=`expr "$a" \* "$a" \* "$a" `
+echo "The square of $a =" $sq
+echo "The cube of $a=" $cube
+priyanka@priyanka-Lenovo-G50-80:~$ sh cube.sh
+enter a number:
+4
+The square of 4 = 16
+The cube of 4= 64
+priyanka@priyanka-Lenovo-G50-80:~$ cat prime.sh
+echo "Prime Number "
+number=5
+num=1
+while [ $num -le $number ]
+do
+    count=0
+    i=2
+    while [ $i -le `expr $num / 2` ]
+    do
+        if [ `expr $num % $i` -eq 0 ]
+        then
+            count=`expr $count + 1`
+            break 
+        fi
+    i=`expr $i + 1`
+    done
+if [ $count == 0 -a $num -ne 1 ]
+then 
+    echo "$num"
+fi
+num=`expr $num + 1`
+done
+priyanka@priyanka-Lenovo-G50-80:~$ sh prime.sh
+Prime Number 
+prime.sh: 17: [: 0: unexpected operator
+prime.sh: 17: [: 0: unexpected operator
+prime.sh: 17: [: 0: unexpected operator
+prime.sh: 17: [: 1: unexpected operator
+prime.sh: 17: [: 0: unexpected operator
+priyanka@priyanka-Lenovo-G50-80:~$ cat fun.sh
+sum()
+{
+    echo "sun of a number"
+    n=$n1
+    m=$n2
+    r=` expr$n + $m `
+    return $r
+}
+sum 2 4
+ret=$?
+echo "sum of a number is $ret"
+priyanka@priyanka-Lenovo-G50-80:~$ sh  fun.sh
+sun of a number
+expr: syntax error
+sum of a number is 2
+priyanka@priyanka-Lenovo-G50-80:~$ ^C
+priyanka@priyanka-Lenovo-G50-80:~$ 
+
