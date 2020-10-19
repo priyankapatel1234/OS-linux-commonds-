@@ -1,0 +1,58 @@
+priyanka@priyanka-Lenovo-G50-80:~$ cat penlindrome.sh
+echo "Enter a string :"
+read s
+echo
+len=`echo $s | wc -c`
+len=`expr $len - 1`
+i=1
+j=`expr $len / 2`
+while test $i -le $j
+do
+k=`echo $s | cut -c $i`
+l=`echo $s | cut -c $len`
+if test $k != $l
+then
+echo "String is not palindrome"
+exit
+fi
+i=`expr $i + 1`
+len=`expr $len - 1`
+done
+echo "String is palindrome"
+priyanka@priyanka-Lenovo-G50-80:~$ sh penlindrome.sh
+Enter a string :
+mam
+
+String is palindrome
+priyanka@priyanka-Lenovo-G50-80:~$ cat reverse.sh
+s="priyanka"
+len=`echo $s | wc -c`
+len=`expr $len - 1`
+rev=""
+while test $len -gt 0
+do
+rev1=`echo $s | cut -c$len`
+rev=$rev$rev1
+len=`expr $len - 1`
+done
+echo $rev
+priyanka@priyanka-Lenovo-G50-80:~$ sh reverse.sh
+aknayirp
+priyanka@priyanka-Lenovo-G50-80:~$ 
+cat dir.sh
+echo "enter directory name"
+read ndir
+if [ -d "$ndir" ]
+then 
+echo "Directory exit"
+else
+`mkdir $ndir`
+echo "Directory creted"
+fi
+priyanka@priyanka-Lenovo-G50-80:~$ sh dir.sh
+enter directory name
+demo
+Directory creted
+
+
+
